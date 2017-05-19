@@ -1,0 +1,68 @@
+/*一级导航*/
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration:none}
+#navigation{width: 100%;height: 56px;background: #25292e;position: relative;}
+#navigation #username{width: 150px;height: 50px;background: red;position: absolute;right: 10px;top: 5px;line-height: 50px;}
+#logo{width: 1000px;height: 56px;margin: 0 auto;overflow: hidden;}
+#logo .logoa{width: 95px;height: 38px;background:url(../img/xb.png) no-repeat ;display: block;margin: 9px 0;float: left;}
+#navigation ul{height:56px;float: right;}
+#navigation ul li{float: left;line-height: 56px;padding:  0 8px;}
+#navigation ul .login a {color: #ccc;font-size: 8px;}
+#navigation ul .shopping a {color: #666;font-size: 8px;}
+#navigation ul .shu{color: #666;font-size: 8px;}
+#logo .logoa:hover {opacity: 0.8;}
+#logo ul .shoppinga a:hover {color: #fff;}
+#logo ul .shoppingb a:hover {color: #fff;}
+#logo ul .shoppingc a:hover {color: #fff;}
+#navigation .shoppinga .shoppingtop{width: 320px;height: 70px;background: rgb(41,47,52);position: absolute;top: 56px;left: 973px;;text-align:center;font-size: 15px;display: none;}
+#navigation .shoppingtop a{line-height: 70px;color: #ccc;}
+#navigation .shoppingbottom{width: 320px;height: 50px;background: rgb(125,191,222);position: absolute;top: 125px;left: 973px;;text-align:center;color: #fff;line-height: 50px;font-size: 15px;display: none;}
+#logo .shoppinga:hover .shoppingtop{display: block;z-index: 5;}
+#logo .shoppinga:hover .shoppingbottom{display: block;z-index: 5;}
+.shoppingb .news{width: 150px;position: absolute;right: 310px;top: 55px;display: none;z-index: 5;}
+.shoppingb .news .newsa{width: 100px;background: rgb(41,47,52); border-bottom: 1px solid #666;font-size: 8px;height: 40px;}
+.shoppingb .news  p{background: rgb(41,47,52);color: #ccc;font-size: 8px;display:block;float: right;height: 0px;}
+.shoppingb:hover .news{display: block;}
+#navigationtwo{width: 1000px;height: 50px;margin: 0 auto;border-bottom: 4px solid #ededed;position: relative;}
+#navigationtwo li{width:100px;float: left;line-height: 50px;margin: 0 50px 0 0;font-size: 15px;border-bottom: 2px solid #ededed;}
+#navigationtwo li a{color: black;}
+#navigationtwo ul li:hover {border-bottom: 4px solid black;}
+/*二级导航*/
+.navigationright{width: 250px;height: 55px;float: right;position: relative;overflow: hidden;}
+.search{width: 250px;height: 50px;position: absolute;left: 260px;border-bottom: 5px solid black;}
+.search input{width: 200px;height: 50px;border: none;outline: none;}
+.navigationright .searcha{position: absolute;right: 0px;top: 10px;cursor: pointer;}
+.navigationright a {float: right;display: block;margin: 10px 0;}
+.notes{width: 1000px;height:160px;position: absolute;top: 55px;right: 0px;display: none;z-index: 5}
+.notesa:hover .notes{display: block;background: #fff;}
+#navigationtwo .notes a{line-height: 80px;margin: 0 65px;font-size: 8px;color: #666;}
+.share{width: 1000px;height:160px;position: absolute;top: 55px;right: 0px;display: none;z-index: 5}
+#navigationtwo .share a{line-height: 80px;margin: 0 65px;font-size: 8px;color: #666;}
+.sharea:hover .share{display: block;background: #fff;}
+/*轮播图*/
+.chuangkou{width: 1000px;height: 480px;margin: 20px auto;overflow: hidden;position: relative;}
+.zhengti{width: 1000px;height: 480px;position: relative;}
+.chuangkou ul{width: 9000px;height: 480px;position: absolute;}
+.chuangkou ul li{width: 1000px;height: 480px;background: yellow;float: left;}
+.chuangkou ul li img{width: 1000px;height: 480px;}
+.zhengtileft{width: 50px;height: 50px;opacity: 0.7; position: absolute;z-index: 5;top: 50%;border-radius: 50%;display: none;}
+.zhengtiright{width: 50px;height: 50px;opacity: 0.7; position: absolute;z-index: 5;top: 50%;border-radius: 50%;left: 950px;display: none;}
+.zhengti:hover .zhengtileft{display: block;}
+.zhengti:hover .zhengtiright{display: block;}
+.zhengti .zhengtileft:hover {background: #666;}
+.zhengti .zhengtiright:hover {background: #666;}
+.chuangkoudibu{width: 290px;height: 50px;margin: 0 auto;}
+.chuangkoudibu li{width: 30px;height: 30px;background:#666;opacity: 0.5; float: left;margin: 0 5px 0 0;text-align: center;font-size: 15px;line-height: 30px;border-radius: 50%;color: #fff;cursor:pointer;}
+.chuangkoudibu .one {background:black;}
+/*轮播图下面的商品展示*/
+#nr{width: 1000px;height: 410px;margin: 0 auto;}
+#nr #nrleft{width: 320px;height: 410px;float: left;}
+#nr #nrleft #nrlefttop{width: 320px;height: 192px;}
+#nr #nrleft #nrleftbottom{width: 320px;height: 192px;margin-top:  20px;}
+#nr #nrcenter{width: 320px;height: 410px;float: left;margin: 0 20px;}
+#nr #nrright{width: 320px;height: 410px;float: right;}
+#nr #nrright #nrrighttop{width: 320px;height: 192px;}
+#nr #nrright #nrrightbottom{width: 320px;height: 192px;margin-top:  20px;}
+/*人气良品*/
+.renqi{width: 1000px;height: 40px;margin: 20px auto;line-height: 40px;text-align: center;font-size: 8px;border-bottom: 1px solid #ccc;color: #333;}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/enroll_zhuce.css">
+    </head>
+    <body>
+    	<div class="enroll">
+    		<a href="sy.html" title=""><img src="img/logo_icon.png" alt=""></a>
+    		<div class="number">
+    			<span>用户名</span>
+    			<input id="username" type="" name="username" value="" placeholder="输入手机号">
+    		</div>
+    		<div class="code">
+    			<span>验证码</span>
+    			<input type="" name="" value="" placeholder="输入验证码">
+    		</div>
+    		<div class="password">
+    			<span>创建密码</span>
+    			<input type="password" name="qwer" id="qwer" value="" placeholder="6-20位字符组成，区分大小写">
+    		</div>
+    		<div class="passworda">
+    			<span>确认密码</span>
+    			<input type="password" name="password" value="" id="checkpass" placeholder="确认密码">
+    		</div>
+    		<div class="agree">
+    			<input type="checkbox" name="" value="" checked="checked">
+    			<span>同意</span>
+    			<a href="http://www.iliangcang.com/i/our/service" title="" target="blank">良仓注册条款</a>
+    		</div>
+    		<div class="login">
+    			<input type="button" name="" value="立即注册" class="submit">
+    		</div>
+    		<div class="foot">
+    			<a class="qqnormal" href="" title=""></a>
+    			<a class="xinlangnormal" href="" title=""></a>
+    			<a class="doubannormal" href="" title=""></a>
+    			<a class="tengxunnormal" href="" title=""></a>
+    			<a class="logina" href="register_denglu.html" title="">登录粮仓</a>
+    		</div>
+    	</div>
+    </body>
+    <!-- 获取接口不是跨域的直接来的  点击注册，发送数据给后端-->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+            $(".submit").click(function (){
+                $.post({
+                    url: 'http://lc.shudong.wang/api_user.php',
+                    dataType: 'json',
+                    data: {status:'register',username:$("#username").val(),password:$("#checkpass").val()},
+                    success:function(data){
+                         // console.log(data)
+                         if (data.code == 0) {
+                            alert("注册成功")
+                            window.location.href="sy.html"
+                         } else if(data.code ==1001){
+                            alert("密码格式不正确,最少6位")
+                         }else if(data.code ==2001) {
+                            alert("用户名已存在")
+                         }
+                    }
+                })
+                
+            })
+    </script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/register_denglu.css">
+    </head>
+    <body>
+    	<div class="register_logo">
+    		<a href="sy.html" title=""></a>
+    	</div>
+    	<div class="phone">
+    		<img src="img/nlphone.png" alt="">
+    		<input id="username" type="" name="" placeholder="输入用户名">
+    	</div>
+    	<div class="code">
+    		<img src="img/nlcode.png" alt="">
+    		<input id="password" type="password" name="" placeholder="输入密码">
+    		<!-- <img src="img/code.png" alt="" class="codea"> -->
+    	</div>
+    	<div class="login">
+    		<input type="checkbox" name="" value="" checked="checked">
+    		<span>自动登录</span>
+    	</div>
+    	<div class="logina">
+    		<input id="loginI" type="button" name="" value="登录">
+    	</div>
+    	<!-- <a href="" title="">更多登录方式 ></a> -->
+    </body>
+    <!-- 获取接口不是跨域的直接来的  点击登录，发送数据给后端-->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $("#loginI").click(function (){
+                $.post({
+                    url: 'http://lc.shudong.wang/api_user.php',
+                    dataType: 'json',
+                    data: {status:'login',username:$("#username").val(),password:$("#password").val()},
+                    success:function(data){
+                         // console.log(data)
+                         if (data.code == 0) {
+                            alert("登录成功")
+                            //把用户名和头像信息传送到主页
+                            window.location.href="sy.html?username="+$("#username").val();
+                         } else if(data.code ==1001){
+                            alert("密码不正确")
+                         }else if(data.code ==2002) {
+                            alert("用户名不存在")
+                         }
+                    }
+                })
+                
+            })
+    </script>
+</html>

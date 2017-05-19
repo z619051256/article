@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+body{background: #999;}
+.enroll{width: 600px;height: 600px;margin: 225px auto;}
+.enroll img{margin:0 0 0 170px;}
+.number{width: 600px;height: 50px;}
+.number span{line-height: 50px;color: #fff;}
+.number input{width: 300px;height: 50px;border: none;margin: 0 0 0 50px;background: #cbcbcb;outline: none;font-size: 15px;color: #fff;padding: 0 0 0 20px;}
+.code{width: 600px;height: 50px;}
+.code span{line-height: 50px;color: #fff;}
+.code input{width: 300px;height: 50px;border: none;margin: 10px 0 0 50px;background: #cbcbcb;outline: none;font-size: 15px;color: #fff;padding: 0 0 0 20px;}
+.password{width: 600px;height: 50px;}
+.password span{line-height: 50px;color: #fff;}
+.password input{width: 300px;height: 50px;border: none;margin: 20px 0 0 35px;background: #cbcbcb;outline: none;font-size: 15px;color: #fff;padding: 0 0 0 20px;}
+.passworda{width: 600px;height: 50px;}
+.passworda span{line-height: 50px;color: #fff;}
+.passworda input{width: 300px;height: 50px;border: none;margin: 30px 0 0 35px;background: #cbcbcb;outline: none;font-size: 15px;color: #fff;padding: 0 0 0 20px;}
+.agree{width: 300px;height: 50px;margin: 40px 0 0 105px;font-size: 15px;color: #fff;}
+.agree input{vertical-align: middle;border: 0;outline: none;}
+.agree span{margin: 0 0 0 10px;}
+.agree a{color: #0c79cc;font-size: 8px;}
+.login input{width: 321px;height: 50px;font-size: 20px;color: #fff;background: #25292e;border: 0;outline: none;font-weight: bold;margin: 0 0 0 103px;}
+.foot{width: 321px;height: 50px;margin: 20px 0 0 103px;}
+.foot .qqnormal{width:24px;height:22px;background:url(../img/qqnormal.png);display: block; float: left;margin: 0 5px 0 5px; }
+.foot .xinlangnormal{width:24px;height:22px;background:url(../img/xinlangnormal.png);display: block;float: left; }
+.foot .doubannormal{width:24px;height:22px;background:url(../img/doubannormal.png);display: block; float: left;margin: 0 5px 0 5px; }
+.foot .tengxunnormal{width:24px;height:22px;background:url(../img/tengxunnormal.png);display: block;float: left;margin: 0 5px 0 5px;  }
+.logina{border-bottom: 1px solid #fff;float: right;color: #fff;}
